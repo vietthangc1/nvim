@@ -1,2 +1,2 @@
-nnoremap <leader>s :<C-u>call gitblame#echo()<CR>
+nnoremap <leader>gh :<C-u>call gitblame#echo()<CR>
 

@@ -36,6 +36,7 @@ Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 " On-demand loading
 Plug 'preservim/nerdTree'                     " File browser  
 Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'preservim/nerdcommenter' " use <leader>c-space
 
 " Icons
 Plug 'ryanoasis/vim-devicons' 
