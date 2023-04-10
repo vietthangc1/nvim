@@ -44,6 +44,9 @@ Plug 'preservim/nerdTree'                     " File browser
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'preservim/nerdcommenter' " use <leader>c-space
 
+" Plug for open lazygit in nvim
+Plug 'kdheepak/lazygit.nvim'
+
 " Icons
 Plug 'ryanoasis/vim-devicons' 
 
@@ -68,11 +71,6 @@ Plug 'zivyangll/git-blame.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'jiangmiao/auto-pairs'
 
-" Initialize plugin system
-" - Automatically executes `filetype plugin indent on` and `syntax enable`.
-
-" Config lsp
-Plug ('neovim/nvim-lspconfiour')
 " Source version control
 Plug 'tpope/vim-fugitive'
 
