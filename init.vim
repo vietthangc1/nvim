@@ -1,14 +1,19 @@
 packloadall
 
 syntax on
+set clipboard=unnamedplus
 set number
 set relativenumber
 set encoding=utf8
 set guifont=Go\ Mono\ Nerd\ Font
 set linespace=5
 set hlsearch
-set tabstop=2
-
+set tabstop=4
+set shiftwidth=4
+set foldmethod=expr
+set foldexpr=nvim_treesitter#foldexpr()
+set nofoldenable
+set foldlevel=99
 
 nnoremap <silent> <leader>df :let @/ = ""<CR>
 call plug#begin(stdpath('data') . '/plugged')
@@ -28,10 +33,11 @@ Plug 'junegunn/vim-easy-align'
 " Any valid git URL is allowed
 Plug 'https://github.com/junegunn/vim-github-dashboard.git'
 
+Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 " Autosave
 Plug '907th/vim-auto-save'
 
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 " On-demand loading
 Plug 'preservim/nerdTree'                     " File browser  
@@ -65,6 +71,8 @@ Plug 'jiangmiao/auto-pairs'
 " Initialize plugin system
 " - Automatically executes `filetype plugin indent on` and `syntax enable`.
 
+" Config lsp
+Plug ('neovim/nvim-lspconfiour')
 " Source version control
 Plug 'tpope/vim-fugitive'
 
@@ -72,7 +80,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'puremourning/vimspector'
 
 " Prettier
-Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
+" Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
 
 call plug#end()
 " You can revert the settings after the call like so:
@@ -95,3 +103,12 @@ nnoremap <S-Tab> <<
 inoremap <S-Tab> <C-d>
 " Open definition in new tab
 nnoremap <silent> <leader>d 	<C-w><C-]><C-w>T
+
+
+" Vim Script
+" colorscheme tokyonight
+
+" There are also colorschemes for the different styles
+colorscheme tokyonight-night
+
+
