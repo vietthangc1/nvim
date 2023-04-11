@@ -6,9 +6,9 @@ tnoremap <silent> <leader>to    <C-\><C-n>:FloatermNew<CR>
 nnoremap <silent> <leader>tk :FloatermKill<CR>:FloatermPrev<CR>
 tnoremap <silent> <leader>tk <C-\><C-n>:FloatermKill<CR>:FloatermPrev<CR>
 
-let g:floaterm_position = 'topright'
-let g:floaterm_width = 0.6
-let g:floaterm_height = 0.6
+let g:floaterm_position = 'center'
+let g:floaterm_width = 0.8
+let g:floaterm_height = 0.8
 let g:floaterm_title = 'Terminal $1/$2'
 let g:floaterm_wintype = 'float'
 
