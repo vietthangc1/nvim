@@ -6,6 +6,12 @@ tnoremap <silent> <leader>to    <C-\><C-n>:FloatermNew<CR>
 nnoremap <silent> <leader>tk :FloatermKill<CR>:FloatermPrev<CR>
 tnoremap <silent> <leader>tk <C-\><C-n>:FloatermKill<CR>:FloatermPrev<CR>
 
+" Navigation next and previous terminal 
+nnoremap <silent> <leader>tn :FloatermNext<CR>
+tnoremap <silent> <leader>tn <C-\><C-n>:FloatermNext<CR>
+nnoremap <silent> <leader>tp :FloatermPrev<CR>
+tnoremap <silent> <leader>tp <C-\><C-n>:FloatermPrev<CR>
+
 let g:floaterm_position = 'center'
 let g:floaterm_width = 0.8
 let g:floaterm_height = 0.8
