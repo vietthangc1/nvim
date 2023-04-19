@@ -104,5 +104,5 @@ nnoremap <silent> <leader>d 	<C-w><C-]><C-w>T
 
 
 " Vim Script
-colorscheme tokyonight-night
+colorscheme tokyonight-day
 

@@ -1,4 +1,4 @@
-let g:coc_global_extensions = ['coc-json', 'coc-git', 'coc-html', 'coc-css', 'coc-docker', 'coc-eslint', 'coc-go', 'coc-pyright', 'coc-yaml', 'coc-rome']
+let g:coc_global_extensions = ['coc-json', 'coc-git', 'coc-html', 'coc-css', 'coc-docker', 'coc-eslint', 'coc-go', 'coc-pyright', 'coc-yaml', 'coc-rome', 'coc-tsserver']
 
 autocmd BufWritePre *.go :silent call CocAction('runCommand', 'editor.action.organizeImport')
 
