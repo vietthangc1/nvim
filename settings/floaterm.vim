@@ -18,7 +18,6 @@ let g:floaterm_height = 0.8
 let g:floaterm_title = 'Terminal $1/$2'
 let g:floaterm_wintype = 'float'
 
-hi Floaterm guibg=Grey15
 hi FloatermBorder guifg=Orange guibg=DarkGreen
 
 " Toggle terminal
