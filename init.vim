@@ -5,7 +5,7 @@ set clipboard=unnamedplus
 set number
 set relativenumber
 set encoding=utf8
-set guifont=Go\ Mono\ Nerd\ Font
+set guifont=*
 set linespace=5
 set hlsearch
 set tabstop=4
@@ -102,7 +102,14 @@ inoremap <S-Tab> <C-d>
 " Open definition in new tab
 nnoremap <silent> <leader>d 	<C-w><C-]><C-w>T
 
-
+" map paste, yank and delete to named register so the content
+" will not be overwritten
+nnoremap d "xd
+vnoremap d "xd
+nnoremap y "xy
+vnoremap y "xy
+nnoremap p "xp
+vnoremap p "xp
 " Vim Script
 colorscheme tokyonight-night
 
